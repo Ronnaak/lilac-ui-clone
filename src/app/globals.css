@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* ===============================
+   BUTTON HOVER / TAP FIX (SAFE)
+   =============================== */
+
+/* Desktop hover – EXACT same */
+@media (hover: hover) and (pointer: fine) {
+  .cta-btn:hover {
+    background-color: #163030;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+}
+
+/* Mobile tap – SAME as hover */
+@media (hover: none) and (pointer: coarse) {
+  .cta-btn:active {
+    background-color: #163030;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+}
+
+/* Remove mobile tap flash */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
