@@ -31,7 +31,8 @@ body {
 /* Desktop hover – EXACT same */
 @media (hover: hover) and (pointer: fine) {
   .cta-btn:hover {
-    background-color: #163030;
+    background-color: #F4EFEA;
+    
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   }
 }

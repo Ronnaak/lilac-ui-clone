@@ -109,7 +109,7 @@ export default function Home() {
 
               You can feel grounded again.
             </h3>
-            <p className="text-xl text-[#4A4F4F] mb-6 leading-relaxed">
+            <p className="text-xl [#4A4F4F] mb-6 leading-relaxed">
               I’m Dr. Maya Reynolds, a licensed clinical psychologist based in
               Santa Monica. I work with thoughtful, high-achieving adults who feel
               anxious, burned out, or stuck in overthinking.
@@ -148,17 +148,17 @@ export default function Home() {
           {[
             {
               title: "Anxiety & Panic Therapy",
-              text: "Support for chronic worry, racing thoughts, panic symptoms, and physical tension using CBT, mindfulness, and body-based tools.",
+              text: "Anxiety and trauma can leave you feeling constantly on edge, disconnected, or overwhelmed. I work with adults who are struggling with chronic anxiety, past trauma, and emotional dysregulation, using a trauma-informed approach that prioritizes safety, trust, and nervous system regulation. Together, we’ll help you feel more grounded, present, and in control.",
               img: "/service-anxitey2.jpg",
             },
             {
               title: "Trauma & EMDR Therapy",
-              text: "Trauma-informed therapy for single-incident and complex trauma with an emphasis on safety, stabilization, and regulation.",
+              text: "Past experiences—whether a single traumatic event or long-standing patterns from earlier life—can continue to affect how you feel, relate to others, and experience safety in your body. My trauma-informed approach integrates EMDR, mindfulness, and body-oriented techniques, with careful pacing and an emphasis on safety, stabilization, and nervous system regulation.",
               img: "/service-trauma.jpg",
             },
             {
               title: "Burnout & High-Pressure Stress",
-              text: "For professionals, creatives, and entrepreneurs feeling exhausted, disconnected, or constantly “on.”",
+              text: "Many high-achieving professionals, entrepreneurs, and creatives come to therapy feeling exhausted, disconnected, or emotionally numb after years of pushing through stress. Therapy offers space to slow down, reconnect with yourself, and develop more sustainable ways of living and working—without constant pressure or self-criticism.",
               img: "/service-burnout.jpg",
             },
           ].map((s, i) => (
@@ -228,24 +228,29 @@ export default function Home() {
       <section className="bg-[#1F3A3A] text-white px-6 md:px-10 py-16 md:py-24">
 
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-4xl md:text-5xl font-serif mb-12">FAQs</h3>
+          <h3 className="text-4xl md:text-5xl font-serif mb-12">“Clients usually ask me…”</h3>
 
           {[
             {
-              q: "Do you offer in-person therapy?",
-              a: "Yes. I offer in-person therapy at my Santa Monica office and secure telehealth sessions throughout California.",
+              q: "Do you offer in-person and online therapy?",
+              a: "Yes. I offer in-person therapy sessions from my Santa Monica office, as well as secure online therapy for clients located anywhere in California.",
             },
             {
-              q: "What do you specialize in?",
-              a: "I specialize in anxiety, panic, trauma, burnout, perfectionism, and chronic stress in adults.",
+              q: "What types of issues do you specialize in?",
+              a: "I specialize in anxiety, panic, trauma, burnout, perfectionism, and high internal pressure. Many of my clients are high-achieving professionals who feel emotionally exhausted or disconnected despite appearing “fine” externally.",
             },
             {
-              q: "What is your therapeutic approach?",
-              a: "I integrate CBT, EMDR, mindfulness-based practices, and body-oriented techniques in a trauma-informed way.",
+              q: "What is your therapy approach like?",
+              a: "My approach is trauma-informed, collaborative, and paced with care. I integrate CBT, EMDR, mindfulness, and body-based techniques to address both emotional and physical patterns of stress.",
+            },
+            
+            {
+              q: "Is trauma therapy right for me?",
+              a: "Trauma therapy isn’t only for major events. Many people carry long-standing patterns shaped by earlier experiences, chronic stress, or relationships. We move at a pace that feels safe and supportive for you.",
             },
             {
-              q: "How do I know if we’re a good fit?",
-              a: "I offer a free 15-minute consultation to discuss your goals and see if my approach feels right for you.",
+              q: "How do I get started?",
+              a: "You can begin by scheduling a free consultation. This allows us to talk about what you’re looking for and see if working together feels like a good fit.",
             },
           ].map((item, i) => (
             <div key={i} className="border-b py-6">
@@ -294,19 +299,19 @@ export default function Home() {
 
             </div>
             <div className=" text-xl [#3A4F4F] space-y-6">
-              <p className="text-[#3A4F4F] max-w-xl mx-auto">
-                A calm, private space designed to help you slow down and feel supported.
+              <p className=" max-w-xl mx-auto">
+               My Santa Monica office is a quiet, private space designed to feel calm and grounding 
+               from the moment you arrive. The environment is intentionally uncluttered, 
+               filled with natural light, and created to support a sense of safety and ease—especially 
+               for clients working through anxiety or trauma.
             </p>
               <p className="text- leading-relaxed">
-                Therapy takes place in a quiet, thoughtfully designed space where you
-                can slow down, feel at ease, and focus inward. The office is intended to
-                feel grounding, private, and welcoming from the moment you arrive.
+                Located at 123th Street 45 W, Santa Monica, CA 90401, the office offers a peaceful setting for in-person therapy, 
+                while I also provide secure telehealth sessions for clients across California.
               </p>
 
               <p className="leading-relaxed">
-                Located in Santa Monica, the office offers natural light, comfortable
-                seating, and an intentionally uncluttered environment to support
-                emotional safety and presence.
+                In-person & online therapy available.
               </p>
 
               <div className=" text-xl pt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
