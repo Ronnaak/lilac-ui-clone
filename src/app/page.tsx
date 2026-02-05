@@ -69,7 +69,7 @@ export default function Home() {
           {/*<h2 className="text-5xl md:text-6xl font-serif leading-tight mb-6">*/}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif leading-tight mb-6">
 
-            Therapy for Anxiety, Trauma & Burnout <br />
+              Anxiety, Trauma & Burnout Therapy <br />
             <span className="italic font-light">in Santa Monica, CA</span>
           </h2>
 
@@ -86,16 +86,27 @@ export default function Home() {
         </div>
 
         {/*<div className="relative w-[320px] md:w-[420px] h-[450px] md:h-[550px] mx-auto rounded-t-full overflow-hidden border-[10px] border-[#E6DED6]">*/}
-        <div className="relative w-[260px] sm:w-[320px] md:w-[420px] h-[380px] sm:h-[450px] md:h-[550px] mx-auto rounded-t-full overflow-hidden border-[8px] md:border-[10px] border-[#E6DED6]">
+        {/*hero image */}
+          <div className="relative h-[300px] sm:h-[380px] md:h-[460px] rounded-3xl overflow-hidden group shadow-lg">
 
-          <Image
-            src="/profile.jpg.png"
-            alt="Dr. Maya Reynolds"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+  
+              {/* Image 1 (default) */}
+              <Image
+                src="/office2.jpeg"
+                alt="Therapy office interior"
+                fill
+                className="object-cover transition-opacity duration-500 group-hover:opacity-0"
+              />
+
+              {/* Image 2 (hover) */}
+              <Image
+                src="/office1.jpeg"
+                alt="Counseling space seating"
+                fill
+                className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              />
+
+            </div>
       </section>
 
       {/* ABOUT */}
@@ -124,15 +135,18 @@ export default function Home() {
                 get in touch →
               </button>
           </div>
+          <div className="relative w-[260px] sm:w-[320px] md:w-[420px] h-[380px] sm:h-[450px] md:h-[650px] mx-auto rounded-t-full overflow-hidden border-[8px] md:border-[10px] border-[#E6DED6]">
 
-          <div className="relative h-[420px] rounded-xl overflow-hidden shadow-lg">
-            <Image
-              src="/office1.jpeg"
-              alt="Therapy office in Santa Monica"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <Image
+            src="/profile.jpg.png"
+            alt="Dr. Maya Reynolds"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+          {/*office image div */}
+          
         </div>
       </section>
 
@@ -179,13 +193,14 @@ export default function Home() {
           {/* IMAGE */}
           {/*<div className="relative h-[620px] rounded-xl overflow-hidden">*/}
           <div className="relative h-[360px] sm:h-[480px] md:h-[620px] rounded-xl overflow-hidden">
-
+            <div className="absolute inset-0 top-8 rounded-2xl overflow-hidden">
             <Image
               src="/support.jpg"
               alt="You don’t have to do this alone"
               fill
               className="object-cover object-[50%_20%]"
             />
+            </div>
             </div>
           {/* CONTENT */}
         {/*<div className="flex items-center px-8 md:px-14 py-16">*/}
